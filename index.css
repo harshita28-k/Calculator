@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container {
+    background-color: rgb(8, 176, 112);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-body {
+    height: 60vh;
+    width: 60vw;
+    background-color: rgb(29, 28, 28);
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px black;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.row1 .heading {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.row1 .heading h3 {
+    font-size: 1.5rem;
+    color: rgb(8, 176, 112);
+    text-shadow: 3px 3px 7px black;
+    font-weight: bolder;
+}
+
+.row1 .subjects {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.row1 .subjects input {
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 8px;
+    border-bottom-color: white;
+    outline: 0px;
+}
+
+.row1 .subjects #btn {
+    color: rgb(8, 176, 112);
+    background-color: transparent;
+    text-shadow: 2px 2px 5px black;
+    font-weight: bolder;
+    margin-top: 8px;
+    padding: 5px;
+    border-bottom-color: rgb(8, 176, 112);
+    cursor: pointer;
+    letter-spacing: 0.2em;
+}
+
+.row2 {
+    width: 70%;
+    margin: auto;
+}
+
+.row2 h2 {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px black;
+}
+
+
+/*************media query************/
+@media (max-width:768px) {
+    .row1 .subjects input {
+        padding: 0%;
+        font-size: 14px;
+    }
+
+    .row1 {
+        margin-top: 2rem;
+    }
+
+    .row1 .heading h3 {
+        font-size: 14px;
+    }
+
+    .row2 h2 {
+        font-size: 19px;
+       padding: 0px;
+    }
+}
+
+@media (max-width:425px) and (min-width:320px) {
+    .row1 .subjects input {
+        padding: 0%;
+        font-size: 10px;
+        width: 50px;
+    }
+
+    .row1 {
+        margin-top: 1rem;
+    }
+
+    .row1 .heading h3 {
+        font-size: 10px;
+    }
+
+    .row2 h2 {
+        font-size: 16px;
+        padding: 22px;
+    }
+    .row1 .subjects #btn {
+        width: 58px;
+        margin-top: 3px;
+        letter-spacing: 0em;
+        font-size: 7px;
+    }
+}
+@media(min-width:1024px) and (max-width:1440px){
+    .main-body {
+        height: 83vh;
+    }
+}
